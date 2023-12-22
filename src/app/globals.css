@@ -262,7 +262,7 @@ td:nth-child(odd) {
 
 .main-section {
   width: 60%;
-  margin: 50px auto;
+  margin: 10px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
