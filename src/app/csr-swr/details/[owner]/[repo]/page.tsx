@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import useSWR from "swr";
 
 import Details from "@/components/Details";
+import Loading from "@/components/Loading";
 
 export interface RepoDetailsData {
   created_at: string;
@@ -44,7 +45,7 @@ const RepoDetails = () => {
   return (
     <>
       {error && <h4>Failed to load</h4>}
-      {!error && !data && <h4>Loading...</h4>}
+      {!error && !data && <Loading />}
       {!error && data && (
         <Details
           createdAt={data.created_at}

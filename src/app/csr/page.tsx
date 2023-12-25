@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Card from "@/components/Card";
+import Loading from "@/components/Loading";
 export interface Repo {
   owner: {
     avatar_url: string;
@@ -38,7 +39,7 @@ const CSRuseEffect = () => {
     fetchRepos();
   }, []);
     if (loading) {
-        return <h4>Loading...</h4>
+        return <Loading />
     }
   return (
     <>

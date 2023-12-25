@@ -7,7 +7,6 @@ const CardSkeleton = () => {
         <div className="card-header">
           <Skeleton height={"100%"} baseColor="#202020" highlightColor="#444" />
         </div>
-
         <div className="labels-container" style={{ marginTop: 12 }}>
           <Skeleton
             className="label"

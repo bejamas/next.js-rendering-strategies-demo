@@ -10,7 +10,7 @@ interface CardProps {
   openIssues: number;
   starGazersCount: number;
   owner: string;
-  directory: 'csr' | 'ssr' | 'ssg' |'csr-swr';
+  directory: 'csr' | 'ssr' | 'ssg' |'csr-swr' |'suspense';
 }
 
 const Card = ({

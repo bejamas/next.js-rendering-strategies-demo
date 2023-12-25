@@ -31,7 +31,7 @@ const SortByIssues = async () => {
             id={repo.id}
             starGazersCount={repo.stargazers_count}
             owner={repo.owner.login}
-            directory="ssr"
+            directory="suspense"
           />
         ))}
       </section>

@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import Loader from "./Loader";
+import Loader from "../../components/CardSkeletonLoader";
 import SortByForks from "./SortByForks";
 import SortBySize from "./SortBySize";
 import SortByStars from "./SortByStars";
@@ -8,7 +8,7 @@ import SortByPullRequests from "./SortByPullRequests";
 
 const StreamingWithSuspense = () => {
   return (
-    <>
+      <>
       <h3 style={{ textAlign: "center", margin: "15px 0 0", fontSize: 30 }}>
         Order by Fork Count
       </h3>
@@ -38,7 +38,7 @@ const StreamingWithSuspense = () => {
       </h3>
       <Suspense fallback={<Loader />}>
         <SortByPullRequests />
-      </Suspense>
+          </Suspense>
     </>
   );
 };

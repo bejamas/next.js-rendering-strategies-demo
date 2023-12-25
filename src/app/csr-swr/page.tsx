@@ -3,6 +3,7 @@
 import useSWR from "swr";
 import Card from "@/components/Card";
 import { Repo } from "../csr/page";
+import Loading from "@/components/Loading";
 
 const fetcher = async (url: string) => {
   const response = await fetch(url);
@@ -17,7 +18,7 @@ const CSRuseSWR = () => {
   );
 
   if (error) return <div>Failed to load</div>;
-  if (!data) return <div>Loading...</div>;
+  if (!data) return <Loading />;
 
   const repos: Repo[] = data.items;
 

@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import Details from "@/components/Details";
+import Loading from "@/components/Loading";
 
 export interface RepoDetailsData {
   created_at: string;
@@ -60,7 +61,7 @@ const RepoDetails = () => {
 
   return (
     <>
-      {loading && <h4>Loading...</h4>}
+      {loading && <Loading />}
       {!loading && repoData && (
         <Details
           createdAt={repoData.created_at}
