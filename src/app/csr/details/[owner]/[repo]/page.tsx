@@ -57,7 +57,7 @@ const RepoDetails = () => {
       setLoading(true);
       fetchRepo();
     }
-  }, [owner, repo]);
+  }, [owner, repo, apiUrl]);
 
   return (
     <>

@@ -20,7 +20,8 @@ const SortByForks = async () => {
     <>
       <section className="main-section">
         {repos.map((repo) => (
-          <Card
+            <Card
+            key={repo.id}
             avatarURL={repo.owner.avatar_url}
             name={repo.name}
             description={repo.description}

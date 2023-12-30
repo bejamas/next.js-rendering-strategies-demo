@@ -2,6 +2,7 @@ import Link from "next/link";
 
 interface CardProps {
   name: string;
+  key: string;
   id: string;
   avatarURL: string;
   description: string;
@@ -10,7 +11,7 @@ interface CardProps {
   openIssues: number;
   starGazersCount: number;
   owner: string;
-  directory: 'csr' | 'ssr' | 'ssg' |'csr-swr' |'suspense';
+  directory: "csr" | "ssr" | "ssg" | "csr-swr" | "suspense";
 }
 
 const Card = ({
@@ -23,11 +24,12 @@ const Card = ({
   openIssues,
   starGazersCount,
   owner,
-  directory
-}:  CardProps) => {
+    directory,
+  key,
+}: CardProps) => {
   return (
     <Link href={`/${directory}/details/${owner}/${name}`}>
-      <section className="card" id={id}>
+      <section className="card" id={id} key={id}>
         <div className="card-header">
           <img src={avatarURL} alt={name} />
         </div>
@@ -53,4 +55,3 @@ const Card = ({
 };
 
 export default Card;
-
