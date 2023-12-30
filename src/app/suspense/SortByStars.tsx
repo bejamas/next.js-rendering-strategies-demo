@@ -5,7 +5,7 @@ import { Repo } from "../csr/page";
 
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 async function getData() {
-    await delay(10000);
+    await delay(5000);
   const response = await fetch(
     "https://api.github.com/search/repositories?q=stars:>1&sort=stars&order=desc&per_page=3",
     { cache: "no-store" }
