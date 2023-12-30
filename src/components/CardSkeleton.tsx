@@ -26,8 +26,8 @@ const CardSkeleton = () => {
           count={1}
           width={"100%"}
           height={"20px"}
-          baseColor="#202020"
-          highlightColor="#444"
+          baseColor={"#202020"}
+          highlightColor={"#444"}
         />
         <Skeleton
           count={4}

@@ -3,8 +3,6 @@
   src: url("../../public/fonts/stigfier.ttf") format("truetype");
 }
 
-
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -250,6 +248,7 @@ td:nth-child(odd) {
   width: 100px;
   margin-left: 50px;
   border-right: #FFF 2px solid;
+  cursor: pointer;
 }
 nav {
   display: flex;

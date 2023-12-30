@@ -9,7 +9,6 @@ async function getData() {
     "https://api.github.com/search/repositories?q=sort=forks&order=desc&per_page=3",
     { cache: "no-store" }
   );
-
   const data = await response.json();
   return data.items;
 }

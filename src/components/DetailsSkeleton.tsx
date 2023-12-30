@@ -9,21 +9,21 @@ const DetailsSkeleton = ({
         <h1 className="details-title">
           <p className="topic">
             <Skeleton
-              width={"100px"}
+              width={"100%"}
               baseColor="#202020"
               highlightColor="#444"
             />
           </p>
         </h1>
         <p className="date">
-          <p className="topic">
+          
             <Skeleton
-              width={"20px"}
+              width={"100px"}
               baseColor="#202020"
               highlightColor="#444"
             />
           </p>
-        </p>
+      
         <Skeleton height={'500px'} width={"100%"} baseColor="#202020" highlightColor="#444" />
         <div className="table-container">
           <table>
