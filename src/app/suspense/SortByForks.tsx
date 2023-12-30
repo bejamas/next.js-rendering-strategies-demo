@@ -14,12 +14,13 @@ async function getData() {
 }
 
 const SortByForks = async () => {
-  const repos = (await getData()) as Repo[];
+    const repos = (await getData()) as Repo[] | undefined;
+
 
   return (
     <>
       <section className="main-section">
-        {repos.map((repo) => (
+        {repos?.map((repo) => (
             <Card
             key={repo.id}
             avatarURL={repo.owner.avatar_url}
