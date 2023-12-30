@@ -24,7 +24,7 @@ const RepoDetails = async ({
   const repo = params.repo;
   console.log({ owner });
     const apiUrl = `https://api.github.com/repos/${owner}/${repo}`;
-    await delay(10000);
+    await delay(5000);
   const repoData: RepoDetailsData = await getData(apiUrl);
   console.log({ repoData });
   return (
